@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8"> <!-- Sebastian Rusin 08.04.2024 -->
+<title>Zadanie9</title>
+<style>
+    body {
+        font-family: Arial, sans-serif:
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .answer {
+        font-size: 16px;
+    }
+    .syntax {
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 20px;
+    }
+</style>
+</head>
+<body>
+    <h1>Pytania i odpowiedzi dotyczące stylu zewnętrznego CSS</h1>
+    
+    <ol>
+        <li><strong>Składnia teoretyczna dla stylu zewnętrznego</strong></li>
+        <div class="syntax">
+            <p>&lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;</p>
+        </div>
+        
+        <li><strong>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</strong></li>
+        <p class="answer">Styl zewnętrzny jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML za pomocą znacznika <code>&lt;link&gt;</code>. Może on występować wielokrotnie w dokumencie HTML, co pozwala na podłączenie wielu arkuszy styli CSS.</p>
+
+        <li><strong>Jak jest najprostsza forma wstawiania stylu zewnętrznego?</strong></li>
+        <div class="syntax">
+            <p>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+        </div>
+
+        <li><strong>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad musi być zachowana przy większej ilości dołączanych styli?</strong></li>
+        <p class="answer">Do jednego dokumentu HTML może być dołączonych wiele arkuszy styli CSS. Zachować należy zasadę kaskadowości, która określa, że w przypadku konfliktu zostanie zastosowana deklaracja z bardziej specyficznego selektora lub z później dołączonego arkusza styli.</p>
+
+        <li><strong>Co się dzieje w przypadku konfliktów?</strong></li>
+        <p class="answer">W przypadku konfliktów, czyli gdy te same style są definiowane w różnych arkuszach styli podłączonych do tego samego dokumentu, zastosowana zostanie deklaracja z bardziej specyficznego selektora lub z później dołączonego arkusza styli.</p>
+
+        <li><strong>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</strong></li>
+        <p class="answer">Pliki arkuszy styli mogą być tworzone i edytowane za pomocą dowolnego edytora tekstowego, takiego jak Notepad++, Sublime Text, Visual Studio Code itp. Wystarczy utworzyć nowy plik, zapisać go z rozszerzeniem .css i rozpocząć edycję stylów CSS w tym pliku.</p>
+
+        <li><strong>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</strong></li>
+        <p class="answer">Specjalne edytory CSS, znane również jako edytory CSS online, są narzędziami online do tworzenia i edycji stylów CSS w przeglądarce internetowej. Przykłady to CodePen, JSFiddle, CSSDesk itp.</p>
+
+        <li><strong>Jakie rozszerzenie posiadają pliki będący zewnętrznym arkuszem styli?</strong></li>
+        <p class="answer">Pliki będące zewnętrznymi arkuszami styli mają zazwyczaj rozszerzenie .css, na przykład styles.css.</p>
+
+        <li><strong>Jakie są zalety zewnętrznego arkusza styli?</strong></li>
+        <div class="answer">
+            <ol>
+                <li>Oddzielenie treści od prezentacji.</li>
+                <li>Możliwość wielokrotnego wykorzystania tego samego arkusza styli przez różne strony internetowe.</li>
+            </ol>
+        </div>
+
+        <li><strong>Uwagi na temat pisania w CSS.</strong></li>
+        <p class="answer">Podczas pisania w CSS należy pamiętać o zasadach kaskadowości, dziedziczenia, specyficzności selektorów oraz optymalizacji kodu w celu poprawy wydajności i czytelności.</p>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8"> <!-- Sebastian Rusin 08.04.2024-->
+<title>zadanie10</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .answer {
+        font-size: 16px;
+    }
+    .description {
+        margin-left: 20px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>Budowa selektora w CSS</h1>
+    
+    <ol>
+        <li><strong>Wymień oraz opisz dwie części selektora</strong></li>
+        <div class="answer">
+            <p>Selektor składa się z dwóch głównych części:</p>
+            <div class="description">
+                <p>a) Element docelowy - określa, na jakim elemencie HTML mają zostać zastosowane style. Może to być nazwa elementu HTML (np. <code>p</code>, <code>div</code>), klasa (<code>.className</code>), identyfikator (<code>#idName</code>), atrybut (<code>[attribute]</code>) lub kombinacja tych elementów.</p>
+                <p>b) Kombinator - określa relacje między elementami, na które mają zostać zastosowane style. Może to być spacja (oznaczająca potomka), > (oznaczające bezpośrednie dziecko), + (oznaczające następnego brata) lub ~ (oznaczające następne rodzeństwo).</p>
+            </div>
+        </div>
+        
+        <li><strong>Znaczenie nawisów klamrowym {...}</strong></li>
+        <div class="answer">
+            <p>Nawiasy klamrowe <code>{}</code> zawierają deklaracje stylów, czyli właściwości i ich wartości, które mają zostać zastosowane do wybranych elementów. Wewnątrz nawiasów klamrowych znajduje się lista deklaracji oddzielonych średnikami, a każda deklaracja składa się z cechy i wartości, np. <code>{ color: red; }</code>.</p>
+        </div>
+
+        <li><strong>Opisz cechy</strong></li>
+        <div class="answer">
+            <p>Cecha w CSS to właściwość, którą chcemy zmienić dla wybranych elementów. Może to być na przykład kolor tekstu, rozmiar czcionki, tło, marginesy, padding, obramowanie itp.</p>
+        </div>
+
+        <li><strong>Opisz wartości</strong></li>
+        <div class="answer">
+            <p>Wartość w CSS to konkretne ustawienie dla danej cechy. Na przykład, dla cechy koloru tekstu wartościami mogą być nazwy kolorów (np. red, blue), kody kolorów heksadecymalnych (#ff0000, #0000ff), rgb(a) (np. rgb(255, 0, 0), rgba(0, 0, 255, 0.5)), wartości liczbowe (np. dla marginesów i paddingu) oraz inne specyficzne wartości dla danej cechy.</p>
+        </div>
+
+        <li><strong>Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny</strong></li>
+        <div class="answer">
+            <p>Znak średnika <code>;</code> stosujemy po każdej deklaracji stylu wewnątrz nawiasów klamrowych <code>{}</code>. Jest on konieczny, aby oddzielić kolejne deklaracje od siebie. Nie jest konieczny jedynie w przypadku, gdy deklaracja jest ostatnią w zestawie deklaracji dla danego selektora.</p>
+        </div>
+    </ol>
+</body>
+</html>
